@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+</head>
+<script language="JavaScript">
+	function test(){
+	var nilai=window.prompt("Nilai : ",0)
+	var huruf = "";
+	if (nilai>=0 && nilai<=40) {
+		huruf = "E";
+		document.write("Nilai anda : "+ nilai +"<br>"+"Nilai huruf: "+ huruf); }
+	else if (nilai>=41 && nilai<=55) {
+		huruf = "D";
+		document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf); }
+	else if (nilai>=56 && nilai<=60) {
+		huruf = "C";
+	document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf); }
+	else if (nilai>=61 && nilai <=65) {
+		huruf = "BC";
+		document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf); }
+	else if (nilai>=66 && nilai<=70) {
+		huruf = "B";
+		document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf); }
+	else if (nilai>=71 && nilai<=80) {
+		huruf = "AB";
+		document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf); }		
+	else if (nilai>=81 && nilai <=100) {
+		huruf = "A";
+		document.write("Nilai anda : "+nilai+"<br>"+"Nilai huruf: "+ huruf);}
+	else {
+		document.write("Nilai anda tidak termasuk dalam huruf apapun")
+		}
+	}
+	</script>
+<body>
+	<input type="button" name="button1" value="Check" onclick=test()>
+</body>
+</html>
